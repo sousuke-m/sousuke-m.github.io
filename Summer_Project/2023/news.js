@@ -6,12 +6,12 @@ function reload_(news_data){
     };
 };
 function news_v(n){
-    document.querySelector(".news_").innerHTML = `<button onclick="news_n();">閉じる</button><h1>${news_data[n].title}</h1>
+    document.querySelector("body > div").innerHTML = `<button onclick="news_n();">閉じる</button><h1>${news_data[n].title}</h1>
 <small>${news_data[n].day}</small><br>${news_data[n].text_}`;
-    document.querySelector(".news_").classList.remove("hide");
+    document.querySelector("body > div").classList.remove("hide");
 };
 function news_n(){
-    document.querySelector(".news_").classList.add("hide");
+    document.querySelector("body > div").classList.add("hide");
 };
 fetch('news_data.json')
     .then((data) => data.json())
