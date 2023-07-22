@@ -10,7 +10,7 @@ body {
     display: none;  /*要素の非表示*/
 }
 .data {
-    display: none;  /*要素の非表示*/
+    display: none;
 }
 .news_list {
     list-style: none;
