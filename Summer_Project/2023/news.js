@@ -3,9 +3,9 @@ function reload_(news_data){
     for(let i = 0;i < news_data.news_data.length;i++){
         console.log(document.querySelector("body > main > div > ul"));
         console.log(`<li>${news_data.news_data[i].title}</li>`);
-        document.querySelector("body > main > div > ul").innerHTML += `<li onclick="
+        document.querySelector("body > main > div > ul").innerHTML += `<li onclick='
 news_v(${i},${JSON.stringify(news_data)});
-">${news_data.news_data[i].title}</li>`;
+'>${news_data.news_data[i].title}</li>`;
     };
 };
 function news_v(n,news_data){
