@@ -9,6 +9,9 @@ body {
 .hide {
     display: none;  /*要素の非表示*/
 }
+.data {
+    display: none;  /*要素の非表示*/
+}
 footer .tab {
     position: fixed;
     bottom: 0;
