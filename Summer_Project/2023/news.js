@@ -1,4 +1,5 @@
 function reload_(news_data){
+    document.querySelector("body > main > div > ul").innerHTML = "";
     for(let i = 0;i < news_data.length;i++){
         console.log(document.querySelector("body > main > div > ul"));
         console.log(`<li>${news_data[i].title}</li>`);
@@ -13,8 +14,10 @@ function news_v(n){
 function news_n(){
     document.querySelector("body > div").classList.add("hide");
 };
-fetch('news_data.json')
-    .then((data) => data.json())
-    .then((obj) => {
-        reload_(obj);
-    });
+function load_(){
+    fetch('news_data.json')
+        .then((data) => data.json())
+        .then((obj) => {
+            reload_(obj);
+        });
+}
