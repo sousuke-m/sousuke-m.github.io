@@ -1,5 +1,5 @@
 function reload_(news_data){
-    document.querySelector("body > main > div > ul").innerHTML = '';
+    document.querySelector("body > main > div > ul").innerHTML = "";
     for(let i = 0;i < news_data.news_data.length;i++){
         console.log(document.querySelector("body > main > div > ul"));
         console.log(`<li>${news_data.news_data[i].title}</li>`);
